@@ -4,15 +4,16 @@
 <head>
    <link rel="stylesheet" href="styles.css">
    <title>The Office</title>
+   <script>
+      function no(clickedID) {
+         document.getElementById(clickedID).style.color = "red"
+      };
+      function yes(clickedID) {
+         document.getElementById(clickedID).style.color = "green"
+      };
+   </script>
 </head>
-<script>
-   function no(clickedID) {
-      document.getElementById(clickedID).style.color = "red"
-   };
-   function yes(clickedID) {
-      document.getElementById(clickedID).style.color = "green"
-   };
-</script>
+
 
 <body>
    <h1>The Office Trivia</h1>
