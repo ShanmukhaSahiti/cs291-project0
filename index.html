@@ -2,6 +2,8 @@
 <html lang="en">
 
 <head>
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <meta name="description" content="CS291A Project0">
    <link rel="stylesheet" href="styles.css">
    <title>The Office</title>
    <script>
@@ -18,66 +20,67 @@
 <body>
    <h1>The Office Trivia</h1>
 
-   <h3>Who said it?</h3>
+   <h2>Who said it?</h2>
+   <table>
+      <tr>
+         <th>Quote</th>
+         <th>A</th>
+         <th>B</th>
+         <th>C</th>
+      </tr>
+
+      <tr>
+         <td>I talk a lot, so I've learned to just tune myself out.</td>
+         <td class="option" id="00" onclick="no(this.id)">Kevin</td>
+         <td class="option" id="01" onclick="no(this.id)">Michael Scott</td>
+         <td class="option" id="02" onclick="yes(this.id)">Kelly</td>
+      </tr>
+
+      <tr>
+         <td>I just want to lie on the beach and eat hot dogs. That's all I've ever wanted.</td>
+         <td class="option" id="10" onclick="yes(this.id)">Kevin</td>
+         <td class="option" id="11" onclick="no(this.id)">Creed</td>
+         <td class="option" id="12" onclick="no(this.id)">Michael Scott</td>
+      </tr>
+
+      <tr>
+         <td>I'm 30. Well, in November I'll be 30.</td>
+         <td class="option" id="20" onclick="no(this.id)">Michael Scott</td>
+         <td class="option" id="21" onclick="yes(this.id)">Creed</td>
+         <td class="option" id="22" onclick="no(this.id)">Stanley</td>
+      </tr>
+   </table>
+
+   <div class="quotes">
+      <img src="MS.webp" alt="Michael Scott">
       <table>
-         <tr>
-            <th>Quote</th>
-            <th>A</th>
-            <th>B</th>
-            <th>C</th>
-         </tr>
-
-         <tr>
-            <td>I talk a lot, so I've learned to just tune myself out.</td>
-            <td class="option" id="00" onclick="no(this.id)">Kevin</td>
-            <td class="option" id="01" onclick="no(this.id)">Michael Scott</td>
-            <td class="option" id="02" onclick="yes(this.id)">Kelly</td>
-         </tr>
-
-         <tr>
-            <td>I just want to lie on the beach and eat hot dogs. That's all I've ever wanted.</td>
-            <td class="option" id="10" onclick="yes(this.id)">Kevin</td>
-            <td class="option" id="11" onclick="no(this.id)">Creed</td>
-            <td class="option" id="12" onclick="no(this.id)">Michael Scott</td>
-         </tr>
-
-         <tr>
-            <td>I'm 30. Well, in November I'll be 30.</td>
-            <td class="option" id="20" onclick="no(this.id)">Michael Scott</td>
-            <td class="option" id="21" onclick="yes(this.id)">Creed</td>
-            <td class="option" id="22" onclick="no(this.id)">Stanley</td>
-         </tr>
+         <tbody>
+            <tr>
+               <th>Michael Scott once said...</th>
+            </tr>
+            <tr>
+               <td>
+                  <ul>
+                     <li class="list">Sometimes I'll start a sentence and I don't even know where it's going. I
+                        just hope I
+                        find it along the way</li>
+                     <li class="list">I'm not superstitious, but I am a little stitious.</li>
+                     <li class="list">And I knew exactly what to do. But in a much more real sense, I had no idea
+                        what to do.
+                     </li>
+                  </ul>
+               </td>
+            </tr>
+         </tbody>
       </table>
-
-      <div class="quotes">
-         <img src="MS.png" alt="Michael Scott">
-         <table>
-            <tbody>
-               <tr>
-                  <th>Michael Scott once said...</th>
-               </tr>
-               <tr>
-                  <td>
-                     <ul>
-                        <li class="list">Sometimes I'll start a sentence and I don't even know where it's going. I
-                           just hope I
-                           find it along the way</li>
-                        <li class="list">I'm not superstitious, but I am a little stitious.</li>
-                        <li class="list">And I knew exactly what to do. But in a much more real sense, I had no idea
-                           what to do.
-                        </li>
-                     </ul>
-                  </td>
-               </tr>
-            </tbody>
-         </table>
-      </div>
-      <footer>
-      <p>
-         <a href="https://github.com/ShanmukhaSahiti/cs291-project0">Source</a><br>
-         <a href="https://theoffice.fandom.com/wiki/Main_Page">Quotes and Image References</a>
+   </div>
+   <footer>
+      <p class="footer-para">
+         <a href="https://github.com/ShanmukhaSahiti/cs291-project0">Source</a>
       </p>
-       </footer>
+      <p  class="footer-para">
+         <a href="https://theoffice.fandom.com/wiki/Main_Page">Quotes and Image References</a>
+   </footer>
 </body>
 
 </html>

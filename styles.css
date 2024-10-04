@@ -25,6 +25,7 @@ tr:nth-child(even) {
 img {
     padding: 10px;
     width: 250px;
+    height: auto;
     display: block;
     margin: auto;
 }
@@ -39,4 +40,8 @@ img {
 
 .option:hover {
     cursor: pointer;
+}
+
+.footer-para {
+    margin: 12px;
 }
