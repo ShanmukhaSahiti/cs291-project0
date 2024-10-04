@@ -1,0 +1,63 @@
+html * {
+    font-family: 'AmericanTypewriter';
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    border: 1px solid #ddd;
+}
+
+th,
+td {
+    text-align: center;
+    padding: 16px;
+}
+
+td:first-child {
+    text-align: left;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2
+}
+
+.fa-check {
+    color: green;
+}
+
+.fa-remove {
+    color: red;
+}
+
+.row {
+    display: flex;
+}
+
+.column {
+    float: left;
+    padding: 10px;
+}
+
+.left {
+    width: 60%;
+}
+
+.right {
+    width: 40%;
+}
+
+img {
+    padding: 10px;
+    width: 250px;
+    display: block;
+    margin: auto;
+}
+
+.quotes {
+    width: fit-content;
+}
+
+.list {
+    margin-bottom: 16px;
+}
